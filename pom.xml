@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.bfs.senword</groupId>
+    <artifactId>bfs-word</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    
+    <build>
+        <plugins>
+            <!-- jetty插件, 设定端口与context path -->
+            <plugin>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <configuration>
+                    <jvmArgs>-XX:PermSize=512m -XX:MaxPermSize=512m
+                        -XX:+CMSPermGenSweepingEnabled
+                        -XX:+CMSClassUnloadingEnabled</jvmArgs>
+                    <!-- <reload>automatic</reload> -->
+                    <!-- <scanIntervalSeconds>2</scanIntervalSeconds> -->
+                    <reload>manual</reload>
+
+
+                    <webAppConfig>
+                        <contextPath>/demo</contextPath>           //注释一   此处为项目的上下文路径
+                    </webAppConfig>
+                    <connectors>
+                        <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+                            <port>6666</port>                                       //注释二   此处配置了访问的端口号
+                            <maxIdleTime>60000</maxIdleTime>
+                        </connector>
+                    </connectors>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
