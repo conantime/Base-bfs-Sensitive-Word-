@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Base-bfs-Sensitive-Word-" />
         <module name="mygithub" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Base-bfs-Sensitive-Word-" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Base-bfs-Sensitive-Word-:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Base_bfs_Sensitive_Word__war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Base-bfs-Sensitive-Word-/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Base-bfs-Sensitive-Word-" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
