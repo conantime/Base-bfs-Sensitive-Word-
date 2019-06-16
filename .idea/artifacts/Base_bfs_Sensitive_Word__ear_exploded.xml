@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="exploded-ear" name="Base-bfs-Sensitive-Word-:ear exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/Base_bfs_Sensitive_Word__ear_exploded</output-path>
-    <root id="root">
-      <element id="javaee-facet-resources" facet="Base-bfs-Sensitive-Word-/javaeeApplication/javaEEApplication" />
-    </root>
-  </artifact>
-</component>
